@@ -6,11 +6,9 @@ Este projeto foi desenvolvido com o objetivo de demonstrar a utilização de nav
 
 ### Funcionalidades:
 - Tela de **Login** com entrada de email e senha.
-- Opção de **"Esqueci a senha"**, com interface moderna e acessível.
-- Tela de **Cadastro** com nome, email e senha.
-- Navegação entre diversas telas via **Drawer** e **Bottom Navigation Bar**.
-- Telas personalizadas para **Perfil**, **Vídeos**, **Fotos**, **Contatos** e **Configurações**, com layout coerente ao tema do app.
-- Exibição de imagens com interações por toque simples (selecionar com ícones) e duplo toque (abrir em visualização completa).
+- Opção de **"Esqueci a senha"**.
+- Tela de **Cadastro** com email/nome e senha.
+- Navegação entre telas via **Drawer** e **Bottom Navigation Bar**.
 - Exemplo prático de como navegar entre telas no Flutter, utilizando **`Navigator.pushReplacement`** para limpar o histórico de navegação e levar o usuário de volta à tela de login após o logout.
 
 ## Tecnologias Utilizadas
@@ -30,9 +28,9 @@ Este projeto foi desenvolvido com o objetivo de demonstrar a utilização de nav
 
 ### Tela de Login:
 - Ao abrir o app, você será direcionado à tela de login.
-- Insira seu e-mail e senha (sem validação real neste exemplo).
+- Insira seu e-mail ou nome e senha (sem validação real neste exemplo).
 - Clique em **"Entrar"** para ser redirecionado à tela principal do usuário (`UserHomeScreen`).
-- Se necessário, utilize a opção **"Esqueci a senha"** para redefinição (a funcionalidade pode ser expandida).
+- A tela de login, fornece acesso à tela de cadastro e esqueci a senha.
 
 ### Tela Principal (`UserHomeScreen`):
 - Na tela principal, você encontrará um **Drawer** com opções para acessar diferentes telas:
@@ -54,7 +52,7 @@ O app utiliza o **`Navigator.pushReplacement`** para garantir transições suave
 - **StatefulWidget**: usado para telas com navegação dinâmica e estado controlado.
 - **StatelessWidget**: usado para telas estáticas ou que não requerem controle de estado.
 
-## Considerações Finais
+## Considerações 
 Este projeto foi desenvolvido como um **estudo de navegação** e demonstra o uso de várias técnicas e widgets no Flutter. A lógica e conteúdo das páginas podem ser expandidos conforme a necessidade de estudantes, professores e desenvolvedores.
 
 ---
