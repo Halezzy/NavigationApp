@@ -2,11 +2,54 @@ import 'package:flutter/material.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Configurações")),
-      body: const Center(child: Text("Tela de Configurações")),
+      appBar: AppBar(
+        title: const Text("Configurações"),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop(); // Voltar à tela anterior
+          },
+        ),
+        backgroundColor: Colors.blue, // AppBar azul
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Icon(
+              Icons.settings,
+              size: 80,
+              color: Colors.blue, // Ícone azul
+            ),
+            SizedBox(height: 16),
+            Text(
+              "Configurações",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+            SizedBox(height: 8),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32.0),
+              child: Text(
+                "Personalize suas preferências, altere temas, "
+                    "gerencie notificações e configure sua conta.",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
